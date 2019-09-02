@@ -1,10 +1,10 @@
 <template>
     <div class="card">
         <div class="card-header">
-            <i class="fas fa-code"></i> Example Vue Component
+            <i class="fas fa-code"></i> Taofik Component
         </div>
         <div class="card-body">
-            I'm an example Vue component!
+            I'm an example Taofik component!
         </div>
     </div>
 </template>
