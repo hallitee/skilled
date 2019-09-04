@@ -25,7 +25,11 @@ class CreateSkillProfilesTable extends Migration
 			$table->string('dayComplete')->nullable();
 			$table->string('prev')->nullable();
 			$table->text('curr')->nullable();
+			$table->string('experience')->nullable();
+			$table->string('skillset')->nullable();
 			$table->string('status')->nullable();
+			$table->foreign('skill_id')->references('id')->on('skills');
+			$table->foreign('profile_id')->references('id')->on('profiles');
             $table->timestamps();
         });
     }
