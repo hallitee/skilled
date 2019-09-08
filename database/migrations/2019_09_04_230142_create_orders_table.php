@@ -25,7 +25,7 @@ class CreateOrdersTable extends Migration
 			$table->string('payStatus')->nullable();
 			$table->string('payDate')->nullable();
 			$table->string('status')->nullable();
-			$table->text('desc')->nullable();
+			$table->text('remarks')->nullable();
 			$table->foreign('profile_id')->references('id')->on('profiles');
             $table->timestamps();
         });
